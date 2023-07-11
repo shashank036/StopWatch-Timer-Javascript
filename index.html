@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Timer</title>
+    <style>
+        .stopwatch{
+            background-color: brown;
+            max-width: 300px;
+            margin:0 auto;
+            color:white;
+        }
+        .timer{
+            font-size: 48px;
+        }
+        .controls{
+            font-size: 20px;
+        }
+        .controls span{
+            padding:0 10px;
+            cursor: pointer;
+        }
+        .timer,.controls{
+            display:flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="stopwatch">
+        <div class="timer">
+            <span id="hrs">00</span>
+            <span id="time_seperator">:</span>
+            <span id="min">00</span>
+            <span id="time_seperator">:</span>
+            <span id="sec">00</span>
+           
+        </div>
+        <div class="controls">        
+            <span id="start" onclick="startWatch()">Start</span>
+            <span id="pause"  onclick="startPause()">Pause</span>        
+            <span id="reset"  onclick="startReset()">Reset</span>
+        </div>
+    </div>
+    <script src="js/time.js"></script>
+</body>
+</html>
